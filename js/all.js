@@ -30,7 +30,10 @@ const productList = {
                 <img src="${p.imageUrl[0]}" class='card-img-top'>
                 <div class = 'card-body'>
                 <h5 class="card-title">${ p.title }</h5>
+                <span class="text-danger">NT$${ p.price }</span>
+                <span class="card-text completed">NT$${ p.origin_price }</span>
                 <p class="card-text">${ p.content }</p>
+                <button class="btn btn-dark mt-3 mx-auto">加入購物車</button>
                 </div>
                 </div>`
             }).join('')
